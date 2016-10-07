@@ -1,5 +1,5 @@
 {
-  "template" : "pcapture-*",
+  "template" : "pcapture*",
   "settings" : {
     "index.refresh_interval" : "15s",
     "number_of_shards" : 1,
@@ -65,7 +65,15 @@
              }
        } ],       
 	 "properties" : {
-         "@version": { "type": "string", "index": "not_analyzed" }
+		 "@version": { "type": "string", "index": "not_analyzed" },
+		 "mos": { "type": "integer" },
+		 "pdd": { "type": "integer" },
+		 "vst": { "type": "integer" },
+		 "srd": { "type": "integer" },
+		 "codec_*": { "type": "integer" },
+		 "sss": { "type": "integer" },
+		 "sdp_*": { "type": "integer" },
+		 "gid": { "type": "integer" }
        }
     }
   }
