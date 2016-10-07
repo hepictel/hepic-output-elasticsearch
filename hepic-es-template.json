@@ -23,6 +23,13 @@
             },
             "match" : "ts"
           }
+ 	}, {
+          "cdr_fields" : {
+            "mapping" : {
+              "type" : "date"
+            },
+            "match" : "cdr_*"
+          }
        }, {
           "ip_fields" : {
             "mapping" : {
@@ -30,8 +37,23 @@
             },
             "match" : "ip"
           }
+	}, {
+          "ip_fields_extra" : {
+            "mapping" : {
+              "type" : "ip"
+            },
+            "match" : "*_ip"
+          }
+	}, {
+          "nested_fields" : {
+            "mapping" : {
+              	"type" : "nested",
+	 	"include_in_parent": true
+            },
+            "match" : "vrq_*"
+          }
         }, {
-             "string_fields" : {
+          "string_fields" : {
                "match" : "*",
                "match_mapping_type" : "string",
                "mapping" : {
