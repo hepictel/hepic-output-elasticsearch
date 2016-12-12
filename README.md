@@ -1,5 +1,5 @@
 # hepic-output-elasticsearch
-<img src="https://pcapture.com/data/images/pcap_top2.png" />
+<img src="https://avatars1.githubusercontent.com/u/17144977?v=3&s=200" />
 
 ### Description
 HEPIC/PCAPTURE Elasticsearch Template
