@@ -26,9 +26,8 @@
  	}, {
           "cdr_fields" : {
             "mapping" : {
-              "type" : "date",
-	      "format": "yyyy-MM-dd HH:mm:ss"
-            },
+              "type" : "date"
+	    },
             "match" : "cdr_*"
           }
        }, {
